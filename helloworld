@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <title>沈  婷</title>
+        <style type="text/css">
+            /*基础样式*/
+            body {
+                line-height: 2em;
+                font-size: 16px;
+                font-family: Times, kaiti;
+                font-weight: 500;
+                min-width: 60em;
+                padding: 0;
+                margin: 0 auto;
+            }
+            a {
+                text-decoration: none;
+                color: #171717;
+            }
+            a:visited {
+                color: #171717;
+            }
+            
+            header {
+                background: #f4f6f6;
+                text-align: center;
+                padding: 1.6em 0;
+                margin: 0 auto;
+            }
+            section.contents {
+                max-width: 48em;
+                margin: 0 auto;
+            }
+            h1 {
+                font-weight: 500;
+                margin-left: -4em;
+            }
+            h1 span {
+                color: #95a5a6;
+            }
+            h3 {
+                color: #f1c40f;
+                font-weight: 500;
+            }
+            section.contacts li {
+                list-style-type: none;
+            }
+            section.experiences li {
+                list-style-type: decimal;
+            }
+            ul.content li {
+                list-style-type: disc;
+            }
+            /*基本定位*/
+            section.contacts, section.skills, section.experiences, section.educations {
+                position: relative;
+                margin-bottom: -0.2em;
+            }
+            div.contact-details, div.skill-details, div.work-details, div.edu-details {
+                font-weight: 500;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                left: 8em;
+                top: -1.3em;
+            }
+            span.date, span.degree {
+                position: absolute;
+            }
+            span.date {
+                right: 0;
+            }
+            span.degree {
+                right: 16em;
+            }
+            /*统一宽度以对齐*/
+            li.mail, li.telephone, div.front-end, div.back-end {
+                width: 14em;
+            }
+            li.twitter, div.others {
+                width: 12em;
+            }
+            div.work-details, div.edu-details {
+                width: 40em;
+            }
+            /*联系方式*/
+            section.contacts ul{
+                padding: 0;
+                padding-top: 0.3em;
+            }
+            section.contacts li {
+                float: left;
+            }
+            section.contacts a {
+                color: #2ecc71;
+            }
+            /*编程技能*/
+            div.skill-details div {
+                float: left;
+                padding: 0;
+                margin: 0;
+            }
+            
+            div.skill-details ul {
+                margin-top: -1em;
+            }
+            /*工作经历*/
+            section.experiences {
+                margin-top: 16em;
+            }
+            ul.work-contents {
+                margin-top: -1em;
+            }
+            div.work-details span.date {
+                top: 1.3em;
+                right: 0;
+            }
+            /*教育背景*/
+            section.educations {
+                margin-top: 16em;
+                margin-bottom: 4em;
+            }
+            h4.bachelor {
+                margin-top: -1em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>沈婷<span>（Web前端）</span></h1>
+        </header>
+
+        <section class="contents">
+
+            <section class="contacts">
+                <h3>联系方式</h3>
+                <div class="contact-details">
+                    <ul>
+                        <li class="mail">
+                            <a href="mailto:ainesmile@gmail.com">
+                                ainesmile@gmail.com
+                            </a>
+                        </li>   
+                        <li class="telephone">
+                            <a href="tel:13261432470">
+                                (+86) 132~6143~2470
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://twitter.com/ainesmile" target="_blank">
+                                Twitter: @ainesmile
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h3>编程技能</h3>
+                <div class="skill-details">
+
+                    <div class="front-end">
+                        <h4>Web前端</h4>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML5 / CSS3</li>
+                            <li>jQuery / Zepto.js</li>
+                            <li>Underscore.js</li>
+                            <li>Backbone.js</li>
+                            <li>Node.js / Express</li>
+                            <li>Jade / Handlebars</li>
+                        </ul>
+                    </div>
+
+                    <div class="back-end">
+                        <h4>Web后端</h4>
+                        <ul>
+                            <li>C</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="others">
+                        <h4>其他</h4>
+                        <ul>
+                            <li>Git</li>
+                            <li>Vim</li>
+                            <li>T<sub>E</sub>X</li>
+                            <li>Markdown</li>
+                            <li>Stata</li>
+                            <li>Mathematica</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="experiences">
+                <h3>工作经历</h3>
+                <div class="work-details">
+                    <h4>
+                        <a href="http://www.wepiao.com/" target="_blank">北京微影时代科技有限公司</a>
+                        <span class="date">2014.12 ~ 2015.06</span>
+                    </h4>
+                    <div>
+                        <ul class="work-contents">
+                            <li>
+                                参与智慧影院项目开发，项目使用了 Node.js、Express、Jade 与 Gulp 等;
+                                <ul class = "content">
+                                    <li>使用 Express Web 应用框架，开发后端服务；</li>
+                                    <li>使用 Zepto 与 RequireJS，开发前端服务。</li>
+                                </ul>
+                            </li>
+                            <li>
+                                负责微影院项目的维护，项目使用了 Underscore、Backbone 与 Grunt 等;
+                                <ul class = "content">
+                                    <li>开发部分功能及修复 Bug；</li>
+                                    <li>将原有代码模板化，大幅降低开发量；</li>
+                                    <li>对原有代码进行重构，大幅降低维护成本。</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="educations">
+                <h3>教育背景</h3>
+                <div class="edu-details">
+                    <h4 class="master">
+                        <a href="http://www.uibe.edu.cn/" target="_blank">
+                            对外经济贸易大学（世界经济）
+                        </a>
+                        <span class="degree">硕士</span>
+                        <span class="date">2012.09 ~ 2014.07</span>
+                    </h4>
+                    <h4 class="bachelor">
+                        <a href="http://www.shufe.edu.cn/" target="_blank">
+                            上海财经大学（数理经济）
+                        </a>
+                        <span class="degree">学士</span>
+                        <span class="date">2008.09 ~ 2012.07</span>
+                    </h4>
+                </div>
+            </section>
+
+        </section>
+    </body>
+
+</html>
